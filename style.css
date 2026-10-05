@@ -1,0 +1,29 @@
+:root{--bg:#f5edf6;--card:#fff;--ink:#2b1431;--mute:#6f5a76;--line:#e4d3e8;--acc:#b3125f;--acc2:#7a2d8f;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b1020;--card:#27172d;--ink:#f6e9f7;--mute:#b9a3c0;--line:#3d2847;--acc:#ff5c9e;--acc2:#c58bff}}
+:root[data-theme="dark"]{--bg:#1b1020;--card:#27172d;--ink:#f6e9f7;--mute:#b9a3c0;--line:#3d2847;--acc:#ff5c9e;--acc2:#c58bff}
+html{scroll-padding-top:56px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.55 Figtree,system-ui,sans-serif}
+h1{font-family:'Bricolage Grotesque',Figtree,sans-serif;margin:0;line-height:1.1;font-size:clamp(28px,6vw,40px);font-weight:800}
+button{font:inherit;cursor:pointer;color:inherit}
+:focus-visible{outline:3px solid var(--acc2);outline-offset:2px}
+.bar{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding:12px 16px;text-align:center;font:800 20px 'Bricolage Grotesque',sans-serif}
+.wrap{max-width:560px;margin:0 auto;padding:0 16px 64px}
+.cover{height:180px;margin:0 -16px;background:#211b20 url(dudufts/360_F_431133057_QbNiwSnE06S4j0lCkhVDfrLSauragD7x.jpg) center/cover no-repeat}
+.head{display:flex;gap:16px;align-items:flex-end;margin-top:-24px}
+.avatar{width:96px;height:96px;flex:none;border-radius:50%;border:4px solid var(--bg);object-fit:cover}
+.user{color:var(--mute);margin:2px 0 0}
+.bio{margin:16px 0;font-size:17px;font-weight:500}
+.stats{display:flex;gap:24px;color:var(--mute);margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.stats b{color:var(--ink);font-family:'Bricolage Grotesque',sans-serif;font-size:20px}
+.post{background:var(--card);border-radius:18px;overflow:hidden;margin-bottom:20px;border:1px solid var(--line)}
+.post header{display:flex;align-items:center;gap:10px;padding:12px 14px}
+.mini{width:36px;height:36px;border-radius:50%;object-fit:cover}
+.post header small{color:var(--mute);display:block;line-height:1.2}
+.media{aspect-ratio:4/3;background:#000;position:relative}
+.media img,.media video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.acts{padding:10px 14px 0}
+.like{background:none;border:0;padding:4px 0;color:var(--mute);font-weight:600}
+.like.on{color:var(--acc)}
+.post p{margin:0;padding:4px 14px 14px}
